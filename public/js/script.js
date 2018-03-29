@@ -65,6 +65,9 @@ $(document).ready(function() {
 });
 
 
+///////////////////////////////////////////
+// GET 
+///////////////////////////////////////////
 
 function getFiles() {
   return $.ajax('/api/file')
@@ -96,10 +99,6 @@ function refreshFileList() {
 function handleAddFileClick() {
   console.log("Baby steps...");
   setFormData({});
-}
-
-function toggleAddFileFormVisibility() {
-  $('#form-container').toggleClass('hidden');
 }
 
 function submitFileForm() {
@@ -135,12 +134,9 @@ function submitFileForm() {
       console.log("Failures at posting, we are", error);
     })
 
-resetform();
+  resetform();
+  setFormData();
   console.log("Your file data", fileData);
-}
-
-function cancelFileForm() {
-  toggleAddFileFormVisibility();
 }
 
 function handleEditFileClick(id) {
@@ -179,7 +175,7 @@ function deleteFile(id) {
     contentType : 'application/json',
   })
     .done(function(response) {
-      console.log("File", id, "is DOOMED!!!!!!");
+      console.log("File", id, "has been deleted");
       refreshFileList();
     })
     .fail(function(error) {
