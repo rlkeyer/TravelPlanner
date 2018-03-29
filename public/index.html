@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">  
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700" rel="stylesheet">
+
+</head>
+<body>
+
+    <!--NAVIGATION-->
+    <div class="topnav" id="nav">   
+        <a href="#wrapper">Travel Journal</a>
+        <a href="#places" id="destinations">Destinations</a>
+        <a href="#travel-tips">Travel Tips</a>
+        <a href="#planner">Travel Planner</a>
+        <a href="#contact">Contact</a>
+        <span><a href="javascript:void(0);" class="icon" id="icon" onclick="navFunction()">&#9776;</a></span>
+    </div>
+
+    <!--PRIMARY IMAGE DIV-->
+    <div class="wrapper" id="wrapper">
+        <div class="home">
+            <h1>A Travel Journal</h1>
+            <h4>Travel journal travel journal travel journal travel journal travel journal travel journal</h4>
+            <a href="#places" id="home-button">Get Started</a>
+        </div>
+    </div>
+
+    <!--PLACES DIV-->
+    <div class="places" id="places">
+        <p class="section-header">PLACES TO GO</p>
+    </div>
+    <div class="places-gallery">
+        <div class="grid">
+            <div class="cell">
+                <a href="#"><img src="img/alaska.JPG"></a>
+            </div>
+            <div class="cell">
+                <a href="#"><img src="img/new-zealand.JPG"></a>                
+            </div>
+            <div class="cell">
+                <a href="#"><img src="img/jmt.JPG"></a>
+            </div>
+            <div class="cell">
+                <a href="#"><img src="img/singapore.JPG"></a>
+            </div>
+            <div class="cell" id="nepal">
+                <a href="#"><img src="img/nepal.JPG"></a>
+            </div>
+            <div class="cell">
+                <a href="javascript:;"><img src="img/vietnam.JPG"></a>
+            </div>
+        </div>
+    </div>
+
+    <!--TRAVEL TIPS DIV-->
+    <div class="travel-tips" id="travel-tips">
+        <p class="section-header">TRAVEL TIPS</p>
+    </div>
+    <div class="travel-gallery">
+        <div class="travel-grid">
+            <div class="travel-cell">
+                <a href="#"><img src="img/money-saving.JPG"></a>
+            </div>
+            <div class="travel-cell">
+                <a href="#"><img src="img/flight.JPG"></a>
+            </div>
+            <div class="travel-cell">
+                <a href="#"><img src="img/national-parks.JPG"></a>
+            </div>
+        </div>
+    </div>
+
+    <!--TRAVEL PLANNER DIV-->
+    <div class="planner" id="planner">
+        <p class="section-header">TRAVEL PLANNER</p>
+    </div>
+    <div class="container">
+      
+  
+      <div id="list-container"></div>
+
+      <div id="form-container" class="panel">
+        <form id="add-file-form">
+          <input type="hidden" id="file-id" value="" />
+          <div class="form-group">
+            <label for="file-title">Destination</label>
+            <input type="text" class="form-control" id="file-title" placeholder="e.g. Paris, France">
+          </div>
+          <div class="form-group">
+            <label for="file-description">Places to visit</label>
+            <input type="text" class="form-control" id="file-description" placeholder="e.g. Louvre, Eiffel Tower, Champs-Elysees">
+          </div>
+          <button type="button" onclick="submitFileForm()" class="btn-submit">Add Destination</button>
+        </form>
+      </div>
+    </div>
+
+    <!--CONTACT DIV-->
+    <div class="contact" id="contact">
+        <p class="section-header">CONTACT</p>
+    </div>
+    <div class="contact-form" id="contact-form">
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name..">
+
+            <label for="email">Email address</label>
+            <input type="text" id="email" name="email" placeholder="Your email...">
+
+            <label for="question">Question</label>
+            <textarea id="question" name="question" placeholder="Write your question here..." style="height:175px"></textarea>
+
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </div>
+
+     <script id="list-template" type="text/x-handlebars-template">
+     <div id="table">
+      <table class="list-group" id="customers">
+        <tr>
+          <th>Destination</th>
+          <th>Places to visit</th>
+        </tr>
+        {{#each files}}
+        <tr class="list-group-item">
+          <td>{{title}}</td> 
+          <td>{{description}}
+          <span class="pull-right">
+            <button type="button" class="btn-edit" onclick="handleEditFileClick('{{_id}}')">Edit</button>
+            <button type="button" class="btn-del" onclick="handleDeleteFileClick('{{_id}}')">Del</button>
+          </span>
+          </td>
+        </tr>
+        {{/each}}
+      </table>
+     </div>
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.8/handlebars.min.js"></script>
+    <script src="/js/script.js"></script>
+ 
+
+</body>
+</html>
+ 
+    
+
+
+
+   
+

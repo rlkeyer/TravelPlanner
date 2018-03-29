@@ -1,0 +1,414 @@
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+}
+
+/************************************************************
+NAVIGATION
+************************************************************/
+
+#nav {
+    list-style-type: none;
+    margin: -8px 0 0 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 8px;
+    background-color: #025402;
+    z-index: 9999;
+}
+
+a {
+    display: inline;
+    vertical-align: center;
+}
+
+a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 14px 16px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #a6a6a6;
+}
+
+.dropdown {
+    position: absolute;
+    display: none;
+}
+
+.sub-nav:hover .dropdown {
+    display: flex;
+    flex-direction: column;
+    margin-left: 280px;
+    background-color: rgba(270, 270, 270, 0.6);
+    justify-content: center;
+}
+
+#icon {
+    text-decoration: none;
+    color: white;
+    display: none;
+    font-size: 20px;
+}
+
+.responsive {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+/************************************************************
+HOME PAGE IMAGE DIV
+************************************************************/
+
+.wrapper {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 125vh;
+    background-image: url('../img/background1.JPG');
+    background-size: cover;
+    margin: -90px 0 0 0;
+}
+
+.home {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    margin: 0 auto;
+    padding-top: 250px;
+}
+
+.home h1 {
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.home h4 {
+    margin-bottom: 65px;
+    font-weight: 300;
+}
+
+#home-button {
+    border: 1px white solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    padding: 20px 80px 20px 80px;
+    color: white;
+    font-weight: 500;
+}
+
+#home-button:hover {
+    background: rgba(270, 270, 270, 0.6);
+    color: black;
+}
+
+/************************************************************
+PLACES DIV
+************************************************************/
+
+.places {
+    padding-top: 40px;
+    margin-top: -45px;
+}
+
+.section-header {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3em;
+    color: #676767;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.cell img {
+    max-width: 100%;
+    min-height: 100%;
+    display: block;
+    padding: 0;
+    object-fit: contain;
+}
+
+.cell a {
+    padding: 0;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1 1 0;
+}
+
+.cell {
+    width: calc(84% / 3);
+    margin: 2%;     
+}
+
+a {
+    text-decoration: none;
+}
+
+/************************************************************
+TRAVEL TIPS DIV
+************************************************************/
+
+.travel-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.travel-cell {
+    width: calc(84% / 3);
+    margin: 2%;
+}
+
+.travel-cell img {
+    max-width: 100%;
+    min-height: 100%;
+    display: block;
+    padding: 0;
+    object-fit: contain;
+}
+
+.travel-cell a {
+    padding: 0;
+}
+
+#travel-tips {
+    padding-top: 40px;
+    margin-top: -45px;
+}
+
+/************************************************************
+TRAVEL PLANNER DIV
+************************************************************/
+
+#planner {
+    padding-top: 40px;
+    margin-top: -45px;
+}
+
+/************************************************************
+CONTACT DIV
+************************************************************/
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 6px 0 22px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+label {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+input[type=submit] {
+    background-color: #025402;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+input[type=submit]:hover {
+    color: #a6a6a6;
+}
+
+.btn-submit {
+    background-color: #025402;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+.btn-submit:hover {
+    color: #a6a6a6;
+}
+
+.btn-del {
+    background-color: red;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+.btn-del:hover {
+    color: #a6a6a6;
+}
+
+.btn-edit {
+    background-color: #025402;
+    color: white;
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 0.7rem;
+}
+
+.btn-edit:hover {
+    color: #a6a6a6;
+}
+
+
+
+.contact-form {
+    padding: 20px;
+}
+
+.panel {
+    padding: 20px;
+}
+
+#contact {
+    padding-top: 40px;
+    margin-top: -45px;
+}
+
+#customers {
+    font-family: 'Raleway', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#table {
+    padding: 20px;
+}
+
+#customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.pull-right {
+    float: right;
+}
+
+
+
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #025402;
+    color: white;
+}
+
+/************************************************************
+MEDIA QUERIES
+************************************************************/
+
+@media screen and (max-width: 750px) {
+  .topnav a:not(:first-child) {display: none;}
+  #icon {
+    float: right;
+    display: block;
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1 1 0;
+  }
+
+    .cell {
+    width: 46%;
+    margin: 2%; 
+    padding: 0;    
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .home {
+      max-width: 90%
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+    .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    flex: 1 1 0;
+    align-self: center;
+  }
+
+    .cell {
+    width: 100%;
+    margin: 0; 
+    padding: 0;    
+  }
+
+  .travel-cell {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+  }
+
+  .home h1 {
+      font-size: 2rem;
+  }
+  .home h4 {
+      font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 800px) and (orientation: landscape) {
+    .home h1 {
+      font-size: 2rem;
+  }
+  .home h4 {
+      font-size: 0.8rem;
+  }
+  .home {
+      padding-top: 50vh;
+  }
+  #home-button {
+      padding: 15px 60px 15px 60px;
+      font-size: .9rem;
+  }
+}
