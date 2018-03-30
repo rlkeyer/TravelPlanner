@@ -66,7 +66,7 @@ $(document).ready(function() {
 
 
 ///////////////////////////////////////////
-// GET 
+// BACK END FUNCTIONS 
 ///////////////////////////////////////////
 
 function getFiles() {
@@ -96,11 +96,7 @@ function refreshFileList() {
     })
 }
 
-function handleAddFileClick() {
-  console.log("Baby steps...");
-  setFormData({});
-}
-
+//POST or PUT data when form is submitted
 function submitFileForm() {
   console.log("You clicked 'submit'. Congratulations.");
 
@@ -139,6 +135,7 @@ function submitFileForm() {
   console.log("Your file data", fileData);
 }
 
+//Populates form with data from file that is to be edited
 function handleEditFileClick(id) {
   const file = window.fileList.find(file => file._id === id);
   if (file) {
@@ -161,6 +158,7 @@ function setFormData(data) {
   $('#file-id').val(file._id);
 }
 
+//Delete file function
 function handleDeleteFileClick(id) {
   if (confirm("Are you sure?")) {
     deleteFile(id);
@@ -183,6 +181,7 @@ function deleteFile(id) {
     })
 }
 
+//Delete Form Fields
 function resetform() {
   document.getElementById("add-file-form").reset();
 }

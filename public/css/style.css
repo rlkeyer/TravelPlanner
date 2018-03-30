@@ -199,38 +199,6 @@ TRAVEL PLANNER DIV
     margin-top: -45px;
 }
 
-/************************************************************
-CONTACT DIV
-************************************************************/
-
-input[type=text], textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    margin: 6px 0 22px 0;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-}
-
-label {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-}
-
-input[type=submit] {
-    background-color: #025402;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-}
-
-input[type=submit]:hover {
-    color: #a6a6a6;
-}
-
 .btn-submit {
     background-color: #025402;
     color: white;
@@ -275,22 +243,11 @@ input[type=submit]:hover {
     color: #a6a6a6;
 }
 
-
-
-.contact-form {
-    padding: 20px;
-}
-
 .panel {
     padding: 20px;
 }
 
-#contact {
-    padding-top: 40px;
-    margin-top: -45px;
-}
-
-#customers {
+#planner-list {
     font-family: 'Raleway', sans-serif;
     border-collapse: collapse;
     width: 100%;
@@ -300,7 +257,7 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
-#customers td, #customers th {
+#planner-list td, #planner-list th {
     border: 1px solid #ddd;
     padding: 8px;
 }
@@ -309,17 +266,55 @@ input[type=submit]:hover {
     float: right;
 }
 
+#planner-list tr:hover {background-color: #ddd;}
 
-
-
-#customers tr:hover {background-color: #ddd;}
-
-#customers th {
+#planner-list th {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
     background-color: #025402;
     color: white;
+}
+
+/************************************************************
+CONTACT DIV
+************************************************************/
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 6px 0 22px 0;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+label {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+input[type=submit] {
+    background-color: #025402;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+input[type=submit]:hover {
+    color: #a6a6a6;
+}
+
+.contact-form {
+    padding: 20px;
+}
+
+#contact {
+    padding-top: 40px;
+    margin-top: -45px;
 }
 
 /************************************************************
