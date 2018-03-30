@@ -7,4 +7,4 @@ Instructions for setup:
 2. Go to the root directory (travel-planner)
 3. Run 'npm install' to install required packages
 4. Run 'npm start' to begin the server process (Note: If this does not work you can run 'node src/server.js')
-5. Open http://localhost:3040/ in your browser
+5. Open 'localhost:3040' in your browser
